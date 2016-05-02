@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>album</title>
+    <link rel="stylesheet" type="text/css" href="../public/stylesheets/LifeTimeStory.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script type="text/javascript" src="../public/javascripts/LifeTimeStory.js"></script>
+    <!--<script type="text/javascript" src="../public/javascripts/album.js"></script>-->
+</head>
+
+<body id= album>
+    <header>
+    <h1>Your Special Memories</h1>
+        <span class="row">
+         <button id ="LogoutB" type="button" onclick="logOut()">Logout</button>
+         <button id ="create" type="button" onclick="createFolderPopUpShow()"> Create Memories</button>
+        </span>
+    </header>
+
+    <section id="createFolder">
+        <form id="createFolderForm" onsubmit="return checkFolder(this)" >
+            <input class="folder" type="text" name="folderName" required placeholder="Folder Name"/>
+            <input class="folder" type="text" name="dateCreated" required placeholder="Date DD/MM/YYYY"/>
+            <span class="createButton">
+                <button id="createf" type="button" name="submit" onclick="createAlbum()">Create</button>
+                <button id= "cancel1" type="button" name="cancel" value="Cancel" onclick="createFolderPopUpHide()">Cancel</button>
+            </span>
+        </form>
+    </section>
+
+    <section id = "albumSection">
+    </section>
+
+
+</body>
+</html>

@@ -1,0 +1,661 @@
+/* reset browser style */
+html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, code, address, variable, form, fieldset, blockquote {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	font-weight: normal;
+}
+/* end reset browser style */
+
+/* Home Page */
+#home {
+	background-image: url('../images/seasons.jpg');
+	background-color: #ffffff;
+	background-size: cover;
+	background-repeat: no-repeat;
+
+}
+
+#home>header {
+	padding-left: 40px;
+	padding-top: 10px;
+	height: 105px;
+	/*border-bottom: white 1px solid;*/
+}
+
+#home>header>h1{
+	margin-top: 30px;
+    	color: white;
+    	font-size: 3.0em;
+    	font-family: "Lucida Handwriting", cursive, sans-serif;
+    	width: 600px;
+	position:relative;
+
+}
+
+#home>header>button {
+	margin-top: -40px;
+	display: inline-block;
+	color: rgb(204, 204, 204);
+	background-color: inherit;
+	text-align: center;
+	width: 70px;
+	float: right;
+	border : 2px inset rgba(204, 204, 204, 0.4);
+	border-radius: 10px;
+	margin-left: 5px;
+	margin-right: 30px;
+}
+
+#home>header>button:hover {
+	color: white;
+	border: 2px outset white;
+}
+#home>header>h1>img{
+	margin-left: 20px;
+	margin-bottom: -10px;
+}
+
+.slogan{
+	margin-top: 10px;
+	color: white;
+	font-family: "Lucida Handwriting", sans-serif;
+	margin-left: 40%;
+	font-size: 1.8em;
+	width: 480px;
+	bottom: 100%;
+}
+.slogan>p{
+	margin-left: -25px;
+}
+
+
+#logInSec {
+	visibility: hidden;
+	display: none;
+	background: rgba(0,0,0,0.9);
+	width: 350px;
+	height: 350px;
+	position: absolute;
+	left:50%;
+	top:22%;
+	margin-left: -175px;
+	border: white 8px solid;
+	margin-bottom: 20px;
+	/*border-radius: 350px;*/
+}
+
+#logInSec>form {
+	width: 200px;
+	font: 12px "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin-top: 70px;
+    margin-left: 75px;
+    text-align: center;
+
+}
+
+.logInTextField{
+    line-height: 26px;
+    width: 200px;
+    margin-top: 20px;
+    border-color: inherit;
+    background-color: inherit;
+    color: #F0F0F5;
+    font-size: 14px;
+}
+
+.logInTextField::-webkit-input-placeholder {
+	color: #F0F0F5;
+	font-style: italic;
+}
+.logInTextField:-moz-placeholder {
+	color: #F0F0F5;
+	font-style: italic;
+}
+.logInTextField:-moz-placeholder {
+	color: #F0F0F5;
+	font-style: italic;
+}
+.logInTextField:-ms-input-placeholder {
+	color: #F0F0F5;
+	font-style: italic;
+}
+.logInTextField:hover{
+	border:2px solid;
+}
+.formButton {
+	width: 200px;
+	margin-top: 90px;
+}
+
+#submit {
+	width: 60px;
+	height: 30px;
+	background-color: inherit;
+	color:  #F0F0F5;
+	margin-right: 10px;
+	margin-top:30px;
+
+}
+
+
+#cancel {
+	width: 60px;
+	height: 30px;
+	background-color: inherit;
+	color:  #F0F0F5;
+	margin-left: 10px;
+	margin-top:30px;
+}
+
+
+
+.createAcct{
+	color: #F0F0F5;
+	width: 200px;
+	height: 30px;
+	background-color: inherit;
+	margin-top: 30px;
+	margin-left: 10px;
+
+}
+
+#signUpSec {
+	visibility:hidden;
+	display:block;
+	width: 350px;
+    height: 390px;
+	margin: 0px auto;
+	text-align: center;
+    color: #CCCCB3;
+    background: rgba(0,0,0,0.9);
+	border: white 8px solid;
+}
+
+.textField {
+	background-color: inherit;
+	margin-top: 22px;
+	width: 200px;
+	height: 26px;
+	font-size: 0.9em;
+	border-color: rgba(204, 204, 179, 0.3);
+	border-radius: 3px;
+    color: #CCCCB3;
+    font-family: Tahoma, Helvetica, sans-serif;
+}
+
+.textField::-webkit-input-placeholder {
+	color: #CCCCB3;
+    font-family: Tahoma, Helvetica, sans-serif;
+}
+.textField:-moz-placeholder {
+	color: #CCCCB3;
+    font-family: Tahoma, Helvetica, sans-serif;
+}
+.textField::-moz-placeholder {
+	color: #CCCCB3;
+    font-family: Tahoma, Helvetica, sans-serif;
+}
+.textField:-ms-input-placeholder {
+	color: #CCCCB3;
+    font-family: Tahoma, Helvetica, sans-serif;
+}
+
+.radioBox{
+	margin-top: 15px;
+	margin-left: -22px;
+}
+
+.radioBox>input[type="radio"] {
+	width     : 2em;
+	margin    : 0;
+	padding   : 0;
+	font-size : 1em;
+	opacity   : 0;
+}
+
+.radioBox>input[type="radio"]+label {
+	display: inline-block;
+	margin-left: -10px;
+	line-height: 26px;
+	font-family: Tahoma, Helvetica, sans-serif;
+}
+
+.radioBox>input[type="radio"]+label>span {
+	display: inline-block;
+	border: #CCCCB3 inset 1px;
+	border-radius: 4px;
+	height: 9px;
+	width: 9px;
+	margin-right: 4px;
+}
+
+.radioBox>input[type="radio"]:checked+label>span {
+	background-color: #CCCCB3;
+	background-image :    -moz-linear-gradient(45deg, #CCCCB3, #F5F5F0);
+	background-image :     -ms-linear-gradient(45deg, #CCCCB3, #F5F5F0);
+	background-image :      -o-linear-gradient(45deg, #CCCCB3, #F5F5F0);
+	background-image : -webkit-linear-gradient(45deg, #CCCCB3, #F5F5F0);
+	background-image :         linear-gradient(45deg, #CCCCB3, #F5F5F0);
+}
+
+/*#signUpSec>form>input[type="submit"]{*/
+	/*color: #CCCCB3;*/
+	/*width: 75px;*/
+	/*height: 36px;*/
+	/*margin-top: 18px;*/
+	/*border-radius: 5px;*/
+/*}*/
+
+#submit2{
+	color: #CCCCB3;
+	width: 75px;
+	height: 36px;
+	margin-top: 18px;
+	border-radius: 5px;
+	margin-right: 10px;
+	background-color: inherit;
+
+}
+#cancel2{
+	color: #CCCCB3;
+	width: 75px;
+	height: 36px;
+	margin-top: 18px;
+	border-radius: 5px;
+	margin-right: 10px;
+	background-color: inherit;
+
+}
+
+
+#album{
+background-image: url("../images/album.jpg");
+background-size: cover;
+background-repeat: repeat;
+}
+#album>header {
+	padding-left: 60px;
+	padding-top: 10px;
+	height: 115px;
+}
+
+#album>header>h1 {
+	color: #ffffff;
+	font-size: 3em;
+	font-weight: 500;
+	font-family: "Lucida Handwriting", Papyrus, sans-serif ;
+  position: fixed;
+	top: 20px;
+  left: 30px;
+}
+
+#albumSection{
+	/*border: 1px dotted rgba(177, 177, 177, 0.6);*/
+	margin-top: 20px;
+	margin: auto;
+	height: 400px;
+	overflow-y: hidden;
+}
+
+.albumDiv{
+	border: 1px solid rgba(177,177,177,0.6);
+	margin: 8px;
+	width: 100px;
+	height: 100px;
+	display: inline-block;
+}
+
+.albumName{
+	color: white;
+	font: 15px "Helvetica Neue", Helvetica, Arial, sans-serif;
+	margin-top: 20px;
+	text-align: center;
+	width: 100px;
+	display: inline-block;
+}
+
+.albumDate{
+	color: white;
+	font: 15px "Helvetica Neue", Helvetica, Arial, sans-serif;
+	margin:auto;
+	margin-top: 5px;
+	text-align: center;
+}
+
+#createFolder {
+	visibility: hidden;
+	display: none;
+	background: inherit;
+	width: 300px;
+	height: 300px;
+	position: absolute;
+	left:50%;
+	top:25%;
+	margin-left: -175px;
+	background: rgba(0,0,0,0.9);
+	border: white 8px solid;
+
+
+	}
+#createFolderForm{
+	width: 200px;
+	font: 1.5em "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin-top: 40px;
+    margin-left: 70px;
+    text-align: center;
+	}
+
+
+.folder{
+    line-height: 20px;
+    width: 150px;
+    margin-top: 20px;
+	margin-bottom: 10px;
+	margin-right: 65px;
+	border-radius:12px;
+	padding: 10px 10px 10px 10px;
+    background-color: inherit;
+    color: #F0F0F5;
+    font-size: 15px;
+		}
+	.folder:hover{
+		border:3px solid;
+	}
+
+.folder::-webkit-input-placeholder {
+	color: #F0F0F5;
+	font-style: italic;
+}
+.folder:-moz-placeholder {
+	color: #F0F0F5;
+	font-style: italic;
+}
+.folder:-moz-placeholder {
+	color: #F0F0F5;
+	font-style: italic;
+}
+.folder:-ms-input-placeholder {
+	color: #F0F0F5;
+	font-style: italic;
+}
+.row>button{
+	margin-top: 40px;
+	display: inline-block;
+	color: rgb(204, 204, 204);
+	font-size: 1em;
+	background-color: inherit;
+	text-align: center;
+	width: 120px;
+	height:30px;
+	float: right;
+	border : 2px inset rgba(204, 204, 204, 0.4);
+	border-radius: 10px;
+	/*margin-left: 10px;*/
+	margin-right:15px;
+	/*margin-right: 30px;*/
+
+}
+.row>button:hover{
+	border:3px solid;
+
+}
+#create{
+	width: 150px;
+
+}
+
+
+
+.createFolderForm{
+	width: 200px;
+	margin-top: 200px;
+
+}
+
+.createButton{
+	margin-left: -20px;
+}
+
+.createButton>button{
+	width: 80px;
+	height: 35px;
+	background-color: inherit;
+	color:  #F0F0F5;
+	margin-right: 8px;
+	margin-top:20px;
+	border-radius:12px;
+	font-size:15px;
+
+}
+.createButton>button:hover{
+	border:3px solid;
+}
+
+#gallery{
+background-color: #00001a;
+background-image: url("../images/blue.jpg");
+background-size: cover;
+background-repeat: no-repeat;
+}
+
+#gallery>header>h1{
+	color: #ffffff;
+	font-size: 3em;
+	font-weight: 500;
+	font-family: "Lucida Handwriting", Papyrus, sans-serif ;
+  position: fixed;
+	top: 20px;
+  left: 30px;
+}
+
+
+.settings{
+	width: 50px;
+	height:50px;
+    position:absolute;
+	right:70px;
+	top:40px;
+	background: url("../images/settings.png") no-repeat 0 0;
+	background-size: contain;
+	display: block;
+}
+.settings-content{
+    display: none;
+    position: absolute;
+    background-color: inherit;
+	width:70px;
+	height:40px;
+    }
+
+#menu{
+	position:relative;
+	width: 60px;
+	height: 50px;
+	background-color:inherit;
+	color:  #F0F0F5;
+	border-radius:12px;
+}
+
+#menu:hover{
+	border:2px solid;
+}
+
+
+#addPhoto {
+	visibility: hidden;
+	display: none;
+	position: absolute;
+	left:50%;
+	top:25%;
+	margin-left: -175px;
+	background-color: rgba(13, 13, 13, 0.8);
+	width: 350px;
+	height: 350px;
+	border:8px white solid;
+	}
+
+#createPhotoForm {
+	font: 2em "Helvetica Neue", Helvetica, Arial, sans-serif;
+	margin: auto;
+    text-align: center;
+}
+
+#uploadFile{
+	text-align: center;
+	font-size: 0.5em;
+	color: white;
+	padding-left: 70px;
+	margin-top: 70px;
+}
+
+.createPhotoButtons{
+	padding-top: 30px;
+}
+
+.gbtn>button{
+	margin-top: 50px;
+
+	color: rgb(204, 204, 204);
+	font-size: 1em;
+	background-color: inherit;
+	text-align: center;
+	width: 90px;
+	height:30px;
+	float: right;
+	border : 2px inset rgba(204, 204, 204, 0.4);
+	border-radius: 10px;
+	/*margin-left: 10px;*/
+	margin-right:15px;
+	/*margin-right: 30px;*/
+
+
+}
+.gbtn>button:hover{
+	border:3px solid;
+}
+
+/*#addPhotoBtn:hover{*/
+	/*border:3px solid;*/
+/*}*/
+/*#logoutB1:hover{*/
+	/*border:3px solid;*/
+/*}*/
+/*#albumB:hover{*/
+	/*border:3px solid;*/
+  /*}*/
+
+#logoutB1{
+	margin-right:140px;
+}
+#addPhotoBtn{
+	width:120px;
+}
+
+#photoSection{
+	/*border: 1px dotted rgba(177, 177, 177, 0.6);*/
+	margin: auto;
+	margin-top: 90px;
+	height: 400px;
+	overflow-y: hidden;
+}
+
+#createp{
+	width: 90px;
+	height: 35px;
+	background-color: inherit;
+	color:  #F0F0F5;
+  	margin-right: 10px;
+	border-radius:12px;
+	/*padding:10px 10px 10px 10px;*/
+	font-size:15px;
+	margin-top: 30px;
+}
+#createp:hover{
+	border:3px solid;
+}
+#cancelp {
+	width: 90px;
+	height: 35px;
+	background-color: inherit;
+	color:  #F0F0F5;
+  	margin-left: 10px;
+	border-radius:12px;
+	/*padding:10px 10px 10px 10px;*/
+	font-size:15px;
+}
+#cancelp:hover{
+	border:3px solid;
+}
+
+#photoText{
+	margin-top: 50px;
+	width: 300px;
+	background: none;
+	color: white;
+}
+
+.photoImg{
+	border: 1px solid rgba(177,177,177,0.6);
+	margin: 8px;
+	width: 150px;
+	height: 150px;
+	display: inline-block;
+}
+
+#container{
+	display: none;
+	visibility: hidden;
+	width: 800px;
+	height: 550px;
+	position: absolute;
+	left:50%;
+	top:13%;
+	margin-left: -400px;
+	background-color: black;
+	z-index: 1;
+	perspective: 1000;
+}
+
+#container:hover #card {
+	transform: rotateY(180deg);
+}
+
+#card{
+	width: 100%;
+	height: 100%;
+	transform-style: preserve-3d;
+	transition: all 1.3s linear;
+}
+
+#viewImage{
+	width: 100%;
+	height: 100%;
+}
+
+#face{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	-webkit-backface-visibility: hidden;
+}
+
+#back{
+	display: block;
+	transform: rotateY(180deg);
+	box-sizing: border-box;
+	padding: 80px;
+	text-align: center;
+	background-color: rgba(13, 13, 13, 0.5);
+	-webkit-backface-visibility: hidden;
+	width: 100%;
+	height: 100%;
+}
+
+#imgText{
+	font-size: 1.5em;
+	text-align: center;
+	color: white;
+	margin:30px;
+	padding: 10px;
+}

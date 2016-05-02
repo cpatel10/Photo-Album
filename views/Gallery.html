@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>gallery</title>
+    <link rel="stylesheet" type="text/css" href="../public/stylesheets/LifeTimeStory.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="../public/javascripts/LifeTimeStory.js"></script>
+</head>
+
+<body id="gallery">
+<header>
+    <h1>Special Moments</h1>
+    <span class="gbtn">
+        <button id ="logoutB1" type="button" onclick="logOut()">Logout</button>
+        <button id="albumB" type="button" onclick="window.location = 'Album.html';">Album</button>
+        <button id ="addPhotoBtn" type="button" onclick="createPhotoPopUpShow()"> Add Photo</button>
+        </span>
+</header>
+<div class="settings" onmouseover="settingsContentShow()">
+    <div class="settings-content" onmouseout="settingsContentHide()">
+        <select id="menu" onchange="changeGalleryBackground()" onmouseout="settingsContentHide()" >
+            <option ></option>
+            <option >Love</option>
+            <option >Sky</option>
+            <option >Lights</option>
+            <option >Stars</option>
+        </select>
+    </div>
+</div>
+
+
+<section id = "addPhoto">
+    <form id="createPhotoForm">
+        <label><input id="uploadFile" type="file" name="uploadPhoto" /></label><br />
+       <textarea form="createPhotoForm" name="photoText" id="photoText"   rows="8" wrap="soft" placeholder="Enter description for photo here..."></textarea><br />
+        <input id="createp" type="button" name="submit" value="Create" onclick="addPhoto()"/><input id= "cancelp" type="button" name="cancel" value="Cancel" onclick="createPhotoPopUpHide()"/>
+    </form>
+</section>
+
+<section id = "photoSection">
+</section>
+
+<div id = "container" onclick="imgDisappear()">
+    <div id = "card">
+        <div id = "face">
+            <img id = "viewImage"></img>
+        </div>
+        <div id = "back">
+        </div>
+    </div>
+</div>
+
+
+
+</body>
+</html>

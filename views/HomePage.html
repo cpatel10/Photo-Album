@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>LifeTimeStory</title>
+    <link rel="stylesheet" type="text/css" href="../public/stylesheets/LifeTimeStory.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script type="text/javascript" src="../public/javascripts/LifeTimeStory.js"></script>
+</head>
+
+<body id="home">
+    <header>
+        <h1>LifeTimeStory<img src="../public/images/icon.png"/> </h1>
+
+        <button id ="joinUs" type="button" onclick="joinUsPopUpShow()">Join us</button>
+    </header>
+
+    <section id="logInSec">
+        <form action="/logIn" method="post" onsubmit="return checkLoginform(this);">
+            <input class="logInTextField" type="text" name="email" required placeholder="Email" /><br>
+            <input class="logInTextField" type="password" name="pswd" required placeholder="Password" /><br>
+            <span class="formButton"><input id="submit" name="logInSubmit" type="submit" value="Login" /><input id="cancel" type="button" name="cancel" value="Cancel" onclick="joinUsPopUpHide()"/></span></br>
+            <input class="createAcct " name=" createAcct" type="button" value="Create Your Story" onclick="signUpPopUpShow()">
+        </form>
+    </section>
+
+    <section id=signUpSec>
+        <form action="/registration" method="post" onsubmit="return checkForm(this);">
+            <input class="textField" type="text" name="email" required placeholder="Email"/></br>
+            <input class="textField" type="text" name="firstName" required placeholder="First Name"/></br>
+            <input class="textField" type="text" name="lastName" required placeholder="Last Name"/></br>
+            <div class="radioBox">
+                <input id="female" type="radio" name="gender" value="female" /><label for="female"><span></span>Female</label>
+                <input id="male" type="radio" name="gender" value="male" /><label for="male"><span></span>Male</label>
+            </div>
+            <input class="textField" type="password" name="pswd1" required placeholder="Enter your password"/></br>
+            <input class="textField" type="password" name="pswd2" required placeholder="Re-enter your password"/></br>
+            <span class="textField1"> <input id= "submit2" type="submit" name="regSubmit" value="Create"/><input id="cancel2" type="button" name="cancel" value="Cancel" onclick="signUpPopUpHide()"/></span>
+        </form>
+    </section>
+
+
+    <section class="slogan" >
+        <h2>Every life is a story.</h2>
+        <p>Our album, tells yours.</p>
+    </section>
+
+</body>
+</html>
